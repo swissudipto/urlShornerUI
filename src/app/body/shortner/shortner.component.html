@@ -1,0 +1,20 @@
+<div class="body">
+    <label for="inputUrl"> Enter URL here   :</label>
+    <input type="text" name="inputurl" placeholder="Enter URL here" [(ngModel)]="inputUrl" />
+    <br />
+    <br />
+    <button
+      class="btn-primary"
+      style="margin-left: 110px"
+      (click)="getShortUrl(inputUrl)"
+    >
+      Submit
+    </button>
+    <br />
+    <br />
+    <div *ngIf="generateddurl != ''">
+      <h3>Short URL</h3>
+      {{ generateddurl }}
+    </div>
+  </div>
+  
