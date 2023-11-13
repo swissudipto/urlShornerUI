@@ -15,6 +15,7 @@ export class VisithistoryComponent {
   }
 
   getVisithistory(shortid:string){
+    if(shortid=="") return alert("Short Id cannot be empty");
     this.shortner.getVisitHistory(shortid).subscribe({
       next : (response) => {
         this.numberOfClicks = response.totalclicks;

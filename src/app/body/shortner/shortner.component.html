@@ -1,10 +1,10 @@
 <div class="body">
-    <label for="inputUrl"> Enter URL here   :</label>
-    <input type="text" name="inputurl" placeholder="Enter URL here" [(ngModel)]="inputUrl" />
+    <label for="inputUrl"> Enter URL here </label>
+    <input type="text" name="inputurl" class="form-control" placeholder="Enter URL here" [(ngModel)]="inputUrl" />
     <br />
     <br />
     <button
-      class="btn-primary"
+    class="btn btn-primary"
       style="margin-left: 110px"
       (click)="getShortUrl(inputUrl)"
     >

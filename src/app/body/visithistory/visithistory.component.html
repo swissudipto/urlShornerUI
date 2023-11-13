@@ -1,15 +1,28 @@
 <div class="visithistory">
   <label for="shortid">Enter the Short ID :</label>
-  <input type="text" name="shortid" id="shortid" [(ngModel)]="shortid" placeholder="Enter The Short id here"/>
+  <input
+    class="form-control"
+    type="text"
+    name="shortid"
+    id="shortid"
+    [(ngModel)]="shortid"
+    placeholder="Enter The Short id here"
+  />
   <br />
   <br />
-  <button class="btn-success" style="margin-left: 100px;" (click)="getVisithistory(shortid)" >Get Number of Clicks</button>
-  <br>
-  <br>
-  <div *ngIf="numberOfClicks>=0">
-    Total Number of clicks on this id is : {{numberOfClicks}}
+  <button
+    class="btn btn-primary"
+    style="margin-left: 100px"
+    (click)="getVisithistory(shortid)"
+  >
+    Get Number of Clicks
+  </button>
+  <br />
+  <br />
+  <div *ngIf="numberOfClicks >= 0">
+    Total Number of clicks on this id is : {{ numberOfClicks }}
   </div>
-  <div *ngIf="errorMassege!=''">
-    {{errorMassege}}
+  <div *ngIf="errorMassege != ''">
+    {{ errorMassege }}
   </div>
 </div>
