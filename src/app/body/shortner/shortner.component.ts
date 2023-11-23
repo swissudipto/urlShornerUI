@@ -16,7 +16,7 @@ export class ShortnerComponent {
     this.shortner.getshorturl(url).subscribe({
       next: (response) => {
         console.warn(`Response is ${response}`);
-        this.generateddurl = `http://localhost:5000/${response}`;
+        this.generateddurl = `https://urlshortner-production-37d4.up.railway.app/${response}`;
         this.inputUrl = "";
       },
       error : (response) => {

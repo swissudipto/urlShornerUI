@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+      "target": "http://urlshortner1-env.eba-u9rtup5a.ap-south-1.elasticbeanstalk.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+}
